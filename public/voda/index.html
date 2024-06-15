@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../favicon.png">
+		<title>Maxstudify</title>
+		<link rel="stylesheet" media="" href="base.css">
+		<meta http-equiv="Cache-control" content="No-Cache">
+		<meta property="og:title" content="Maxstudify от Павла Лукоянова" />
+		<meta property="og:description" content="Виртуальная образовательная платформа" />
+		<meta property="og:image" content="/og-preview.png" />
+		<meta name="apple-mobile-web-app-title" content="Maxstudify" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<script type="text/javascript" src="../JS/complagaetAuditor.js"></script>
+		<script type="text/javascript" src="lessonCfg.js"></script>
+		<script type="text/javascript" src="../JS/Bobatron.js"></script>
+		<script type="text/javascript" src="../JS/lessonMenu.js"></script>
+	</head>
+	<body id="body" style="">
+		<div id="loader_wrapper">
+			<div id="loader_window" class="bobatron">
+				<svg id="microlaba_big_logo"></svg>
+				<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="location_issues_wrapper">location_issues_wrapper</div>
+			</div>
+		</div>
+		<div id="modal_wrapper">
+			<div id="window_settings" class="bobatron">
+				<div class="flex flex_gap_10">
+					<div class="microlaba_logo"></div>
+					<h1>Maxstudify</h1>
+				</div>
+			</div>
+		</div>
+		<header id="header">
+			<div class="header_white_plate bobatron">
+				<div class="flex flex_alignitems_center flex_gap_10 header_logobox" id="microlaba_header">
+					<div class="icon_burger" id="burger"></div>
+					<div class="flex flex_alignitems_center flex_gap_10" id="microlaba_header_icon" style="cursor: pointer;">
+						<div class="microlaba_logo"></div>
+						<h1>Maxstudify</h1>
+					</div>
+				</div>
+				<div class="flex flex_alignitems_center flex_gap_10 header_buttonbox" id="buttons_header">
+					<div class="flex flex_alignitems_center flex_gap_10" id="buttons_header_profile" style="z-index: 2;">
+						<h3 id="header_username">Ник</h3>
+						<div id="header_ava" class="ava_2 small_avatar"></div>
+					</div>
+					<!--button class="bobatron" Bt-CM="0.7">Старая версия</button>
+					<div class="icon_settings" id="button_settings"></div-->
+				</div>
+			</div>
+			<div class="header_white_plate_shadow"></div>
+		</header>
+		<div class="menu_container">
+			<article class="side_menu bobatron" id="side_menu" style="">
+				<article class="menu_entry bobatron flex_gap_10">
+					<h3 id="main_header"></h3>
+					<div class="flex flex_gap_10">
+						<div class="bobatron progress_grade" Bt-CM="0.7" id="main_progress_grade">0</div>
+						<div class="progress bobatron" Bt-CM="0.7">
+							<p style="z-index: 1;" id="main_progress_percent">0%</p>
+							<div class="progress_green" id="main_progress_green"></div>
+						</div>
+					</div>
+				</article>
+				<button id="button_goback" class="bobatron" Bt-CM="0.7"><div class="arrow_left_b"></div>Main page</button>
+			</article>
+			<article class="flex_alignitems_center bobatron" id="main_screen">
+				<article class="menu_entry_mini bobatron" id="menu_entry_theory"></article>
+				<article class="menu_entry_mini bobatron" id="menu_entry_test"></article>
+			</article>
+			<article id="side_menu_right" class="bobatron">
+				<button id="button_theory" class="side_menu_buttons"><div id="button_theory_icon" class="bobatron" Bt-CM="0.7"></div>Theory</button>
+				<button id="button_test" class="side_menu_buttons"><div id="button_test_icon" class="bobatron" Bt-CM="0.7"></div>Quiz</button>
+			</article>
+		</div>
+		<footer id="test_complete_overlay_wrapper" style="display: none;">
+			<div id="test_complete_overlay" style="" class="bobatron">
+				<div class="flex flex_column" style="width: 250px; height: 100%;">
+					<h3 id="test_explanation_label"> </h3>
+					<h4 id="test_explanation" style="color: #FFFFFF"> </h4>
+				</div>
+				<button id="test_button_next" class="bobatron" Bt-CM="0.7">Next!<div class="arrow_right_b"></div></button>
+			</div>
+		</footer>
+		<footer id="footer">
+			<div class="footer_content_container bobatron">
+				<div class="flex flex_alignitems_center flex_justify_center">
+					<button class="button_footer" id="button_settings_back">
+						<div class="arrow_left_b"></div>
+						<h4 style="color: #000000">Назад</h4>
+					</button>
+					<button class="button_footer" id="button_settings_save">
+						<div class="flex flex_column flex_alignitems_center flex_justify_center" id="button_settings_save_content" style="gap: 5px; transition-duration: 0.3s">
+							<div class="arrow_save"></div>
+							<h4 style="color: #000000">Сохранить</h4>
+							<div class="flex flex_column flex_alignitems_center flex_justify_center" id="button_settings_save_content_state2" style="gap: 5px; position: absolute; top: -80px; display: none">
+								<div class="icon_ok"></div>
+								<h4 style="color: #000000">Сохранено</h4>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
